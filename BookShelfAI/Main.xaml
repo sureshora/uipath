@@ -130,7 +130,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1279,2917" sap2010:WorkflowViewState.IdRef="Sequence_4">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1283,2917" sap2010:WorkflowViewState.IdRef="Sequence_4">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="variable2" />
       <Variable x:TypeArguments="x:String" Name="letter" />
@@ -157,7 +157,7 @@
         <OutArgument x:TypeArguments="x:String">[apiUrl]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:String">["http://127.0.0.1:8000/api/v1/analyze-compliance"]</InArgument>
+        <InArgument x:TypeArguments="x:String">["https://api.rightnowaudit.com/api/v1/analyze-compliance"]</InArgument>
       </Assign.Value>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -174,7 +174,7 @@
         <InArgument x:TypeArguments="x:String">["{""case_id"":""CASE-UI-001"",""raw_document_text"":""Tender Ref #MND-992. Apex Infra was disqualified because audited financials were from our Maharashtra subsidiary instead of our local Chennai office. Our parent company meets all global net-worth criteria.""}"]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim client As New System.Net.Http.HttpClient()&#xA;&#xA;Dim content As New System.Net.Http.StringContent(&#xA;    jsonBody,&#xA;    System.Text.Encoding.UTF8,&#xA;    &quot;application/json&quot;&#xA;)&#xA;&#xA;Dim response = client.PostAsync(apiUrl, content).Result&#xA;&#xA;responseText = response.Content.ReadAsStringAsync().Result" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="452,197" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+    <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim client As New System.Net.Http.HttpClient()&#xD;&#xA;&#xD;&#xA;Dim content As New System.Net.Http.StringContent(&#xD;&#xA;    jsonBody,&#xD;&#xA;    System.Text.Encoding.UTF8,&#xD;&#xA;    &quot;application/json&quot;&#xD;&#xA;)&#xD;&#xA;&#xD;&#xA;Dim response = client.PostAsync(apiUrl, content).Result&#xD;&#xA;&#xD;&#xA;responseText = response.Content.ReadAsStringAsync().Result" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="452,197" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
       <ui:InvokeCode.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="apiUrl">[apiUrl]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="jsonBody">[jsonBody]</InArgument>
