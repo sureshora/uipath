@@ -1,0 +1,113 @@
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+ENV/
+
+# -----------------------------
+# Environment files
+# -----------------------------
+.env
+.env.*
+!.env.example
+
+# -----------------------------
+# VS Code
+# -----------------------------
+.vscode/
+.history/
+
+# -----------------------------
+# JetBrains
+# -----------------------------
+.idea/
+
+# -----------------------------
+# Python build
+# -----------------------------
+build/
+dist/
+*.egg
+
+# -----------------------------
+# Logs
+# -----------------------------
+*.log
+logs/
+
+# -----------------------------
+# Database
+# -----------------------------
+*.db
+*.sqlite
+*.sqlite3
+
+# -----------------------------
+# ChromaDB
+# -----------------------------
+chroma_db/
+chromadb/
+vector_db/
+
+# -----------------------------
+# Uploaded documents
+# -----------------------------
+uploads/
+temp/
+Temp/
+output/
+
+# -----------------------------
+# UiPath
+# -----------------------------
+.project/
+.local/
+.settings/
+.cache/
+TestResults/
+
+# Local publish packages
+*.nupkg
+
+# Screenshots
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# -----------------------------
+# OS
+# -----------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -----------------------------
+# Secrets
+# -----------------------------
+secrets.json
+credentials.json
+token.json
+config.local.json
+
+# -----------------------------
+# Node (if frontend exists)
+# -----------------------------
+node_modules/
+.next/
+dist/
+
+# -----------------------------
+# Office temporary files
+# -----------------------------
+~$*

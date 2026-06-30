@@ -1,0 +1,6 @@
+{
+  "Name": "BookshelfAI_Compliance_Agent",
+  "ProjectType": "Process",
+  "Description": "BookshelfAI_Compliance_Agent",
+  "MainFile": "Main.xaml"
+}

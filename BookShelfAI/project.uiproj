@@ -1,0 +1,6 @@
+{
+  "Name": "BookShelfAI",
+  "ProjectType": "Process",
+  "Description": "BookShelfAI",
+  "MainFile": "Main.xaml"
+}

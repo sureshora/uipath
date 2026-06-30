@@ -1,0 +1,34 @@
+/* Custom Scrollbar Polish for deep legal texts inside RAG blocks */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #0f172a; /* matches Tailwind slate-900 */
+    border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #334155; /* matches Tailwind slate-700 */
+    border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #475569; /* matches Tailwind slate-600 */
+}
+
+/* Custom Text Area Styling Overrides */
+textarea, input {
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Operational Hover State Micro-Animations */
+button {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+button:active {
+    transform: scale(0.98);
+}

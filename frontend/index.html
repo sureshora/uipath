@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf AI - Compliance Control Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans min-h-screen">
+
+    <header class="border-b border-slate-800 bg-slate-950 px-8 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+            <span class="text-2xl">📚</span>
+            <div>
+                <h1 class="text-lg font-bold tracking-tight text-white">Bookshelf <span class="text-blue-500 font-medium">AI</span></h1>
+                <p class="text-xs text-slate-400">KnowledgeOS Enterprise Governance Node</p>
+            </div>
+        </div>
+        <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-2 bg-emerald-950 text-emerald-400 border border-emerald-800 px-3 py-1 rounded-full text-xs font-mono">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>CORE ENGINE ONLINE</span>
+            </div>
+            <span class="text-xs text-slate-500 font-mono">v1.0.0</span>
+        </div>
+    </header>
+
+    <main class="p-8 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        <section class="lg:col-span-5 bg-slate-950 border border-slate-800 rounded-xl p-6 shadow-xl">
+            <h2 class="text-md font-semibold text-white mb-4 flex items-center">
+                <span class="mr-2">📥</span> Case Evaluation Input
+            </h2>
+            
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-xs font-mono uppercase tracking-wider text-slate-400 mb-2">Case Identifier</label>
+                    <input type="text" id="caseIdInput" value="CASE-2026-HACK-001" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-slate-200 font-mono text-sm focus:outline-none focus:border-blue-500 transition-colors">
+                </div>
+                
+                <div>
+                    <label class="block text-xs font-mono uppercase tracking-wider text-slate-400 mb-2">Grievance / Documentation Text</label>
+                    <textarea id="caseTextInput" rows="10" placeholder="Paste incoming public file text or tender dispute context here..." class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-slate-200 text-sm focus:outline-none focus:border-blue-500 transition-colors resize-none">Tender Ref #MND-992. Apex Infra was disqualified because audited financials were from our Maharashtra subsidiary instead of our local Chennai office. Our parent company meets all global net-worth criteria.</textarea>
+                </div>
+                
+                <button onclick="evaluateCase()" id="submitBtn" class="w-full bg-blue-600 hover:bg-blue-500 active:bg-blue-700 text-white font-medium py-3 rounded-lg transition-colors flex items-center justify-center space-x-2 text-sm">
+                    <span>⚡ Run Audit Evaluation</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="lg:col-span-7 space-y-6">
+            
+            <div id="placeholderView" class="bg-slate-950 border border-slate-800 border-dashed rounded-xl p-12 text-center flex flex-col items-center justify-center h-full min-h-[450px]">
+                <span class="text-4xl mb-4 text-slate-600">🧠</span>
+                <h3 class="text-slate-300 font-medium">Awaiting Live Analytics</h3>
+                <p class="text-sm text-slate-500 max-w-sm mt-1">Input a payload and execute the evaluation to stream live vector logs and RAG-driven draft compliance sheets.</p>
+            </div>
+
+            <div id="analyticsPanel" class="hidden space-y-6">
+                
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="bg-slate-950 border border-slate-800 p-4 rounded-xl">
+                        <span class="block text-[10px] font-mono uppercase text-slate-500 tracking-wider">AI Verdict</span>
+                        <span id="verdictBadge" class="inline-block mt-1 text-sm font-bold px-2.5 py-0.5 rounded-md font-mono"></span>
+                    </div>
+                    <div class="bg-slate-950 border border-slate-800 p-4 rounded-xl">
+                        <span class="block text-[10px] font-mono uppercase text-slate-500 tracking-wider">Confidence Level</span>
+                        <span id="confidenceScore" class="block mt-1 text-lg font-bold font-mono text-white"></span>
+                    </div>
+                    <div class="bg-slate-950 border border-slate-800 p-4 rounded-xl">
+                        <span class="block text-[10px] font-mono uppercase text-slate-500 tracking-wider">Verification Source</span>
+                        <span id="citationFile" class="block mt-1 text-xs font-mono font-medium text-blue-400 truncate"></span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-6">
+                    <div class="bg-slate-950 border border-slate-800 rounded-xl p-5">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xs font-mono text-amber-400 uppercase tracking-wider flex items-center">
+                                <span class="mr-1.5">🛡️</span> Verified Knowledge Base Citation
+                            </h3>
+                            <span id="citationChapter" class="text-[10px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400 font-mono"></span>
+                        </div>
+                        <div id="citationBody" class="bg-amber-950/20 border border-amber-900/40 rounded-lg p-3.5 text-xs text-amber-200/90 leading-relaxed font-sans italic custom-scrollbar"></div>
+                    </div>
+
+                    <div class="bg-slate-950 border border-slate-800 rounded-xl p-5">
+                        <h3 class="text-xs font-mono text-blue-400 uppercase tracking-wider flex items-center mb-3">
+                            <span class="mr-1.5">📝</span> Proposed Response Sheet (Editable)
+                        </h3>
+                        <textarea id="draftLetterBody" rows="8" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-4 text-slate-200 font-mono text-xs leading-relaxed focus:outline-none focus:border-blue-500"></textarea>
+                        
+                        <div class="mt-4 pt-4 border-t border-slate-800 flex justify-end space-x-3">
+                            <button onclick="resetDashboard()" class="px-4 py-2 bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-300 text-xs rounded-lg font-medium transition-colors">
+                                Reject Draft
+                            </button>
+                            <button onclick="authorizeCase()" class="px-5 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs rounded-lg font-medium shadow-md shadow-emerald-950 transition-colors flex items-center space-x-1">
+                                <span>🟢 Authorize & Close Case</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

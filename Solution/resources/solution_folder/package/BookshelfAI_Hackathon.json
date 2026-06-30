@@ -1,0 +1,26 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "BookshelfAI_Hackathon",
+    "kind": "package",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "6b988f54-2710-4d4c-a782-037ac9a8de77",
+    "isOverridable": true,
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "files": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "fileName": null,
+      "fileReference": null,
+      "name": "BookshelfAI_Hackathon",
+      "description": null
+    },
+    "locks": [],
+    "key": "eee41b0a-c157-48bf-8ac7-5472653699d1"
+  }
+}

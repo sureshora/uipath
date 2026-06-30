@@ -1,0 +1,12 @@
+{
+  "DocVersion": "1.0.0",
+  "StudioMinVersion": "2025.04.0",
+  "SolutionId": "83e4ebbb-e43b-40ae-93a0-27e88f5eb7cd",
+  "Projects": [
+    {
+      "Type": "Process",
+      "ProjectRelativePath": "BookshelfAI_Hackathon/project.uiproj",
+      "Id": "6b988f54-2710-4d4c-a782-037ac9a8de77"
+    }
+  ]
+}
