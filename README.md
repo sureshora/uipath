@@ -222,7 +222,7 @@ python backend/main.py
 
 The project enforces a strict separation of concerns between core logic, backend data vectors, and front-end management.
 
-
+```
 bookshelf-ai-governance/
 │
 ├── backend/                          # 🧠 Backend API Core
@@ -240,6 +240,7 @@ bookshelf-ai-governance/
 │   └── BookShelfAI/                  # 📡 Standard REST Reusability API Connector Sequence
 │
 └── README.md                         # Product Documentation
+```
 💡 UiPath Project Breakdown: The automation architecture is split into two distinct, decoupled packages:
 
 BookShelfAI-Compliance: Handles high-level case lifecycle checks, error processing, and validation pipelines.
