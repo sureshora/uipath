@@ -245,9 +245,6 @@ bookshelf-ai-governance/
 BookShelfAI-Compliance: Handles high-level case lifecycle checks, error processing, and validation pipelines.
 
 BookShelfAI: Provides clean, reusable API automation snippets that connect raw text blocks straight to our FastAPI gateway endpoints.
-```
-
----
 
 # 📤 Input
 
