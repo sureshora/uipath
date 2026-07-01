@@ -218,20 +218,33 @@ python backend/main.py
 ---
 
 # 📂 Project Structure
+## 🏗️ System Architecture & Folder Layout
 
-```
-RightNowAudit/
+The project enforces a strict separation of concerns between core logic, backend data vectors, and front-end management.
 
-├── backend/
-├── frontend/
-├── Workflows/
-├── Config/
-├── Assets/
-├── Documentation/
-├── project.json
-├── Main.xaml
-├── README.md
-└── LICENSE
+
+bookshelf-ai-governance/
+│
+├── backend/                          # 🧠 Backend API Core
+│   ├── bookshelf_knowledge_base/     # ChromaDB vector collections
+│   ├── generate_pdf.py               # Master Policy PDF Generator
+│   ├── seed_database.py              # PDF Parser & Vector Embedding Engine
+│   ├── main.py                       # FastAPI REST Server
+│   └── requirements.txt              # Python module requirements
+│
+├── frontend/                         # 🎨 Front-End Interface
+│   └── index.html                    # Tailwind Compliance Dashboard
+│
+├── uipath-automation/                 # 🤖 UiPath Orchestration Components
+│   ├── BookShelfAI-Compliance/       # 📊 Primary Case Verification Workflow Pipeline
+│   └── BookShelfAI/                  # 📡 Standard REST Reusability API Connector Sequence
+│
+└── README.md                         # Product Documentation
+💡 UiPath Project Breakdown: The automation architecture is split into two distinct, decoupled packages:
+
+BookShelfAI-Compliance: Handles high-level case lifecycle checks, error processing, and validation pipelines.
+
+BookShelfAI: Provides clean, reusable API automation snippets that connect raw text blocks straight to our FastAPI gateway endpoints.
 ```
 
 ---
