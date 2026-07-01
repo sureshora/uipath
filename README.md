@@ -235,9 +235,9 @@ bookshelf-ai-governance/
 ├── frontend/                         # 🎨 Front-End Interface
 │   └── index.html                    # Tailwind Compliance Dashboard
 │
-├── uipath-automation/                 # 🤖 UiPath Orchestration Components
-│   ├── BookShelfAI-Compliance/       # 📊 Primary Case Verification Workflow Pipeline
-│   └── BookShelfAI/                  # 📡 Standard REST Reusability API Connector Sequence
+|  (uipath-automation)            # 🤖 UiPath Orchestration Components
+│── BookShelfAI-Compliance/       # 📊 Primary Case Verification Workflow Pipeline
+│── BookShelfAI/                  # 📡 Standard REST Reusability API Connector Sequence
 │
 └── README.md                         # Product Documentation
 ```
