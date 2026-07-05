@@ -1,25 +1,27 @@
 <div align="center">
 
 # 🚀 RightNowAudit
-### AI-Powered Compliance Automation Platform
+### AI-Powered Procurement Compliance Copilot
 
-### 🏆 UiPath Hackathon Submission – Track 1 (Maestro)
+## 🏆 UiPath AgentHack 2026 Submission
+### Track 1 – UiPath Maestro Case Management
 
 <img src="https://img.shields.io/badge/UiPath-Maestro-orange?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Human--in--the--Loop-Action%20Center-blue?style=for-the-badge" />
+<img src="https://img.shields.io/badge/API-Workflow-success?style=for-the-badge" />
+<img src="https://img.shields.io/badge/KnowledgeOS-RAG-purple?style=for-the-badge" />
 <img src="https://img.shields.io/badge/FastAPI-Backend-green?style=for-the-badge" />
-<img src="https://img.shields.io/badge/KnowledgeOS-RAG-blue?style=for-the-badge" />
-<img src="https://img.shields.io/badge/AI-Human--in--the--Loop-red?style=for-the-badge" />
 <img src="https://img.shields.io/badge/License-MIT-success?style=for-the-badge" />
 
 ---
 
-### 🌐 Live Demo
+## 🌐 Live Demo
 
-## https://rightnowaudit.com
+https://rightnowaudit.com
 
 ---
 
-**Enterprise AI Compliance • KnowledgeOS • Human-in-the-Loop • Explainable AI**
+### Enterprise AI • UiPath Maestro • Human-in-the-Loop • Explainable AI • KnowledgeOS
 
 </div>
 
@@ -27,146 +29,164 @@
 
 # 📖 Overview
 
-RightNowAudit is an **AI-powered Enterprise Compliance Automation Platform** that transforms complex policy documents, regulations, and grievance cases into explainable, auditable, and human-approved decisions.
+RightNowAudit is an **AI-powered Procurement Compliance Copilot** that demonstrates how **UiPath Maestro Case Management** orchestrates complex compliance investigations involving AI agents, API workflows, and human reviewers.
 
-Unlike traditional Generative AI systems that can hallucinate or provide unverifiable responses, RightNowAudit combines **Retrieval-Augmented Generation (RAG)**, **KnowledgeOS**, **UiPath Maestro**, and **Human Authorization** to deliver transparent, traceable, and enterprise-ready compliance automation.
+The solution combines:
+
+- UiPath Maestro Case Management
+- UiPath API Workflow
+- Human-in-the-Loop Review (Action Center)
+- Retrieval-Augmented Generation (KnowledgeOS)
+- Evidence-based AI recommendations
+
+Instead of replacing human decision makers, RightNowAudit keeps compliance officers in control by routing every AI recommendation through structured case review and approval.
 
 ---
 
 # 🎯 Business Problem
 
-Organizations spend significant time reviewing:
+Procurement teams spend significant time reviewing:
 
-- 📄 Compliance Cases
-- 📄 Tender Documents
-- 📄 Internal Policies
-- 📄 Government Regulations
-- 📄 Audit Reports
-- 📄 Employee Grievances
+- Procurement Complaints
+- Tender Documents
+- Vendor Grievances
+- Internal Procurement Policies
+- Government Regulations
+- Audit Findings
 
-Manual reviews are:
+Traditional investigations are:
 
-- ❌ Slow
-- ❌ Expensive
-- ❌ Inconsistent
-- ❌ Difficult to Audit
+- Slow
+- Manual
+- Difficult to Audit
+- Prone to Inconsistent Decisions
 
 ---
 
 # ✅ Solution
 
-RightNowAudit automates compliance analysis while keeping humans in control.
+RightNowAudit uses **UiPath Maestro** to orchestrate the complete compliance investigation lifecycle.
 
-The platform:
+The workflow:
 
-✅ Understands uploaded cases
-
-✅ Searches enterprise knowledge
-
-✅ Retrieves supporting regulations
-
-✅ Generates explainable AI recommendations
-
-✅ Produces editable response drafts
-
-✅ Routes the case for Human Approval
-
-✅ Maintains a complete audit trail
+- Receives a procurement complaint
+- Starts an AI Compliance Investigation
+- Calls KnowledgeOS through an API Workflow
+- Performs RAG over procurement policies
+- Generates explainable recommendations
+- Creates a Human Review task in UiPath Action Center
+- Supports Approve / Reject / Escalate decisions
+- Maintains a complete audit trail
 
 ---
 
-# ✨ Key Features
+# 🚀 UiPath Maestro Workflow
 
-- 🤖 AI-powered Compliance Analysis
-- 📚 Enterprise KnowledgeOS (RAG)
-- 🔎 Policy & Regulation Matching
-- 📊 Confidence Score
-- 📑 Knowledge Source Citations
-- ✍️ Editable Response Drafts
-- 👨‍💼 Human Approval Workflow
-- 📜 Complete Audit Trail
-- 🌐 REST API Integration
-- ⚡ Enterprise Ready
-
----
-
-# 🏗️ Solution Architecture
-
-```
-                  User
-                    │
-                    ▼
-        ┌────────────────────┐
-        │   UiPath Maestro   │
-        └────────────────────┘
-                    │
-                    ▼
-        ┌────────────────────┐
-        │  AI Compliance     │
-        │     Workflow       │
-        └────────────────────┘
-                    │
-     ┌──────────────┼──────────────┐
-     ▼              ▼              ▼
-
- Coding Agent   Agent Builder   KnowledgeOS
-
-     │              │              │
-     └──────────────┼──────────────┘
-                    ▼
-          Compliance Decision
-                    │
-                    ▼
-           Human Authorization
-                    │
-                    ▼
-             Final Audit Report
+```text
+Receive Procurement Complaint
+            │
+            ▼
+AI Procurement Compliance Investigation
+(API Workflow)
+            │
+            ▼
+KnowledgeOS (RAG)
+            │
+            ▼
+AI Investigation Result
+            │
+            ▼
+Compliance Analyst Review
+(Human-in-the-Loop)
+            │
+            ▼
+Compliance Decision
+      ┌───────────────┐
+      │               │
+Approve        Reject / Escalate
+      │               │
+      ▼               ▼
+Case Closed   Senior Compliance Review
 ```
 
 ---
 
-# 🤖 AI Agents Used
+# ✨ AI Investigation Output
 
-## ✅ Coding Agents
+KnowledgeOS performs Retrieval-Augmented Generation over procurement policies and returns:
 
-- API Integration
-- Compliance Logic
-- Business Rules
-- Data Processing
-- Report Generation
-- Knowledge Retrieval
+- ✅ AI Verdict
+- ✅ Confidence Score
+- ✅ Investigation Summary
+- ✅ Relevant Policy Clause
+- ✅ Source Document
+- ✅ Chapter Reference
+- ✅ Draft Response Letter
 
----
-
-## ✅ UiPath Agent Builder (Low-Code Agents)
-
-- Natural Language Understanding
-- Policy Interpretation
-- Compliance Reasoning
-- Decision Summarization
-- Recommendation Generation
+These outputs are passed into the Maestro case for human review.
 
 ---
 
 # 🧩 UiPath Components Used
 
-- ✅ UiPath Studio
-- ✅ UiPath Maestro
-- ✅ REFramework
-- ✅ Sequences
-- ✅ Flowcharts
-- ✅ State Machines
-- ✅ Invoke Workflow
-- ✅ HTTP Request Activities
-- ✅ Excel Activities
-- ✅ PDF Activities
-- ✅ Word Activities
-- ✅ JSON Activities
-- ✅ Data Tables
-- ✅ Logging
-- ✅ Exception Handling
-- ✅ Orchestrator Assets *(Optional)*
-- ✅ Orchestrator Queues *(Optional)*
+### Maestro
+
+- ✅ Maestro Case Management
+- ✅ BPMN Process
+- ✅ Human-in-the-Loop Tasks
+- ✅ Action Center
+- ✅ Decision Gateway
+
+### Automation
+
+- ✅ API Workflow
+- ✅ HTTP Request
+- ✅ JavaScript
+- ✅ JSON Processing
+- ✅ REST Integration
+
+### AI
+
+- ✅ KnowledgeOS
+- ✅ Retrieval-Augmented Generation
+- ✅ Policy Retrieval
+- ✅ Evidence-backed Recommendations
+
+---
+
+# 🏗️ Solution Architecture
+
+```text
+                     User
+                      │
+                      ▼
+        ┌────────────────────────────┐
+        │ UiPath Maestro Case Engine │
+        └────────────────────────────┘
+                      │
+                      ▼
+        AI Procurement Investigation
+              (API Workflow)
+                      │
+                      ▼
+             RightNowAudit API
+                      │
+                      ▼
+                KnowledgeOS
+            Retrieval + RAG
+                      │
+                      ▼
+        AI Compliance Recommendation
+                      │
+                      ▼
+        Human Review (Action Center)
+                      │
+                      ▼
+             Approve / Reject / Escalate
+                      │
+                      ▼
+               Compliance Case Closed
+```
 
 ---
 
@@ -174,127 +194,63 @@ The platform:
 
 | Layer | Technology |
 |--------|------------|
-| Frontend | HTML, CSS, JavaScript |
+| Workflow | UiPath Maestro |
+| Human Tasks | UiPath Action Center |
+| API Workflow | UiPath API Workflow |
 | Backend | FastAPI |
 | AI | OpenAI |
 | Knowledge | KnowledgeOS |
-| Vector Database | ChromaDB |
-| Database | SQLite / PostgreSQL |
-| Automation | UiPath Maestro |
-| API | REST API |
+| Vector DB | ChromaDB |
+| Database | SQLite |
+| Integration | REST API |
 
 ---
 
-# 🚀 Getting Started
+# 📥 AI Output
 
-## Clone Repository
+The AI Compliance Investigation generates:
 
-```bash
-git clone https://github.com/YOUR_USERNAME/rightnowaudit.git
-```
+- AI Verdict
+- Confidence Score
+- Investigation Summary
+- Policy Clause
+- Supporting Evidence
+- Source Document
+- Draft Response Letter
 
-## Install Dependencies
-
-```bash
-pip install -r backend/requirements.txt
-```
-
-## Configure Environment
-
-Set your API Keys and application configuration.
-
-## Seed Knowledge Base
-
-```bash
-python backend/seed_database.py
-```
-
-## Run Backend
-
-```bash
-python backend/main.py
-```
-
----
-
-# 📂 Project Structure
-## 🏗️ System Architecture & Folder Layout
-
-The project enforces a strict separation of concerns between core logic, backend data vectors, and front-end management.
-
-```
-bookshelf-ai-governance/
-│
-├── backend/                          # 🧠 Backend API Core
-│   ├── bookshelf_knowledge_base/     # ChromaDB vector collections
-│   ├── generate_pdf.py               # Master Policy PDF Generator
-│   ├── seed_database.py              # PDF Parser & Vector Embedding Engine
-│   ├── main.py                       # FastAPI REST Server
-│   └── requirements.txt              # Python module requirements
-│
-├── frontend/                         # 🎨 Front-End Interface
-│   └── index.html                    # Tailwind Compliance Dashboard
-│
-|  (uipath-automation)            # 🤖 UiPath Orchestration Components
-│── BookShelfAI-Compliance/       # 📊 Primary Case Verification Workflow Pipeline
-│── BookShelfAI/                  # 📡 Standard REST Reusability API Connector Sequence
-│
-└── README.md                         # Product Documentation
-```
-💡 UiPath Project Breakdown: The automation architecture is split into two distinct, decoupled packages:
-
-BookShelfAI-Compliance: Handles high-level case lifecycle checks, error processing, and validation pipelines.
-
-BookShelfAI: Provides clean, reusable API automation snippets that connect raw text blocks straight to our FastAPI gateway endpoints.
-
-# 📤 Input
-
-- 📄 PDF
-- 📄 DOCX
-- 📄 TXT
-- 📄 Compliance Cases
-- 📄 Tender Documents
-
----
-
-# 📥 Output
-
-- ✅ Compliance Verdict
-- ✅ Confidence Score
-- ✅ Supporting Evidence
-- ✅ Policy Citations
-- ✅ Draft Response Letter
-- ✅ Audit Report
+These outputs are reviewed by a human before final approval.
 
 ---
 
 # 👨‍⚖️ Human-in-the-Loop
 
-## Human Validation at Input
+RightNowAudit demonstrates enterprise governance by ensuring:
 
-Every document is validated before AI processing.
-
-## Human Authorization at Output
-
-Every AI recommendation is reviewed and approved by a human before execution.
+- AI performs compliance investigation
+- Humans review AI recommendations
+- Compliance analysts approve, reject, or escalate
+- Every decision is auditable
 
 ---
 
-# 📈 Future Roadmap
+# 🎯 Hackathon Highlights
 
-- ☁️ Multi-Tenant SaaS
-- 🌍 Enterprise Knowledge Marketplace
-- 📱 Mobile Companion
-- 🤖 Autonomous Compliance Agents
-- 📊 Analytics Dashboard
-- 🔗 ERP Integration
-- 🛰️ Cloud Deployment
+This project demonstrates:
+
+- ✅ UiPath Maestro Case Management
+- ✅ BPMN Case Orchestration
+- ✅ API Workflow Integration
+- ✅ Human-in-the-Loop Review
+- ✅ Action Center Integration
+- ✅ AI-powered Compliance Investigation
+- ✅ Retrieval-Augmented Generation
+- ✅ Explainable AI with Policy Citations
 
 ---
 
 # 📜 License
 
-Licensed under the **MIT License**.
+MIT License
 
 ---
 
@@ -304,16 +260,12 @@ Licensed under the **MIT License**.
 
 Founder — **AdmnWizard AI LLC**
 
-### 🌐 Live Demo
-
-https://rightnowaudit.com
+🌐 https://rightnowaudit.com
 
 ---
 
 <div align="center">
 
-### ⭐ If you found this project useful, please give it a Star!
-
-Made with ❤️ using **UiPath • FastAPI • KnowledgeOS • RAG • AI**
+### Built with ❤️ using UiPath Maestro, Action Center, FastAPI, KnowledgeOS and AI
 
 </div>
